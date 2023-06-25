@@ -69,7 +69,7 @@ class Parser(object):
             self.config_header.pop()  # we need this 2nd pop to close the config vdom wihout next properly
         self.config_header.pop()
 
-    # prase FortiGate configuration
+    # parse FortiGate configuration
     def parse_text(self, text):
         gen_lines = (line.rstrip() for line in text if line.strip())
         previous_method = None
